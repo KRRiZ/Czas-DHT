@@ -64,10 +64,6 @@ byte stopnie[8] = {
   0b00000
 };
 
-
-
-
-
 void setup() {
 //Określenie pinów dla przycisków
   pinMode (plusMinuta, INPUT);
@@ -99,10 +95,6 @@ void setup() {
   t.every(1000, temperatura);
 }
 
-
-
-
-
 void loop() {
   
 //Odświeżenie timera
@@ -129,10 +121,6 @@ void loop() {
   }
 }
 
-
-
-
-
 //Zczytanie i wyświetlenie danych z czujnika
 void temperatura() {
   sensors_event_t event;
@@ -154,18 +142,11 @@ void temperatura() {
   }
 }
 
-
-
-
-
 //Zmiana czasu
 void czas() {
   sekundy++;
   czasWypisz();
 }
-
-
-
 
 //Sprawdzenie wartości i wyświetlenie czasu na LCD
 void czasWypisz() {
